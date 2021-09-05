@@ -35,7 +35,7 @@ func handleRequests() {
 	// add our new DELETE endpoint here
 	myRouter.HandleFunc("/article/{id}", deleteArticle).Methods("DELETE")
 	myRouter.HandleFunc("/article/{id}", returnSingleArticle)
-	log.Fatal(http.ListenAndServe(":10001", myRouter))
+	log.Fatal(http.ListenAndServe(":1234", myRouter))
 }
 
 func main() {
