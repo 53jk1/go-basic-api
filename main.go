@@ -41,8 +41,8 @@ func handleRequests() {
 func main() {
 	fmt.Println("Rest API v2.0 - Mux Routers")
 	Articles = []Article{
-		Article{Id: "1", Title: "Hello", Desc: "Article Description", Content: "Article Content"},
-		Article{Id: "1", Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
+		{Id: "1", Title: "Hello", Desc: "Article Description", Content: "Article Content"},
+		{Id: "1", Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
 	}
 	handleRequests()
 }
